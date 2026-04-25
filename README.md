@@ -47,9 +47,12 @@ The engine includes an automated security suite to evaluate system behavior unde
 1. Clone the repository
 
 2. Install dependencies:
+`
 pip install pandas numpy psutil matplotlib
-
+`
 3. Run the complete benchmark and security suite:
+`
 python main.py
+`
 
 Note: By default, main.py is configured to download and benchmark the SNAP Facebook dataset. To run faster debugging tests, swap the dataset configuration to DataLoader.generate_synthetic_graph() inside main.py.
