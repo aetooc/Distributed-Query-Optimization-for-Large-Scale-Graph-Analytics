@@ -20,10 +20,6 @@ The engine was stress-tested against the **Stanford Network Analysis Project (SN
 
 Testing revealed massive performance advantages for graph-native algebra when handling highly connected data, primarily by bypassing the heavy cross-product computations required by relational engines on "super-nodes".
 
-### Query Speedups (Graph vs. Relational)
-* **Neighbors Query (1-hop):** Graph algebra achieved a **3,374.12x speedup** (0.035 ms vs 116.565 ms).
-* **Reachability Query:** Graph algebra achieved a **13.51x speedup** (10.410 ms vs 140.647 ms).
-* **Pattern Matching (Triangle Detection):** Graph algebra achieved a **4.28x speedup** (2,169.36 ms vs 9,295.15 ms) on heavy O(n³) traversals.
 
 ### Relational Join Algorithm Comparison
 Compared to a baseline O(n²) Nested-Loop join, the optimized algebraic implementations yielded significant efficiency gains on large tabular data representations:
